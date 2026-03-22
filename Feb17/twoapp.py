@@ -37,8 +37,6 @@ X = torch.tensor ([
     [6.0]
 ])
 
-X = X@w+b
-
 prediction =model(X)
 print(prediction)
 

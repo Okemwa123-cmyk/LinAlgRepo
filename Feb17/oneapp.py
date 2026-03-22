@@ -31,7 +31,7 @@
 
 # with torch.no_grad():
 #     w -= lr*w.grad
-#     b -= lr*w.grad
+#     b -= lr*b.grad
 
 # print(w,b)
 
@@ -75,7 +75,7 @@ for epoch in range(epochs):
     loss.backward()
     with torch.no_grad():
         w -= lr*w.grad
-        b -= lr*w.grad
+        b -= lr*b.grad
     w.grad.zero_()
     b.grad.zero_()
 # print(w,b)
